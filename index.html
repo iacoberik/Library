@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library App</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <header>
+      <h1>Library</h1>
+      <div class="buttons">
+        <button class="btn add-book">Add new book</button>
+      </div>
+    </header>
+    <main>
+      <div class="books"></div>
+    </main>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-form">
+          <h1 class="form-title"></h1>
+          <form class="add-book-form">
+            <div class="modal-input-field">
+              <label for="book-title">Title:</label>
+              <input type="text" name="book-title" id="book-title" class="modal-form-input">
+            </div>
+            <div class="modal-input-field">
+              <label for="book-author">Author:</label>
+              <input type="text" name="book-author" id="book-author" class="modal-form-input">
+            </div>
+            <div class="modal-input-field">
+              <label for="book-pages">Pages:</label>
+              <input type="number" min="0" name="book-pages" id="book-pages" class="modal-form-input">
+            </div>
+            <div class="modal-input-field">
+              <span class="modal-read">Read?</span>
+              <label>
+                <input type="checkbox" name="book-read" id="book-read" class="checkmark">
+              </label>
+            </div>
+            <div class="submit-modal-form">
+              <button type="submit" class="btn form-add-button"></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
